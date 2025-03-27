@@ -17,7 +17,6 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector",
     "firebase": "^11.5.0"
   }
 }
