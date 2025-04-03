@@ -22,7 +22,7 @@ A connector is a collection of Queries and Mutations. One SDK is generated for e
 You can find more information about connectors in the [Data Connect documentation](https://firebase.google.com/docs/data-connect#how-does).
 
 ```javascript
-import { getDataConnect, DataConnect } from 'firebase/data-connect';
+import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig } from '@firebasegen/default-connector';
 
 const dataConnect = getDataConnect(connectorConfig);
@@ -35,7 +35,7 @@ To connect to the emulator, you can use the following code.
 You can also follow the emulator instructions from the [Data Connect documentation](https://firebase.google.com/docs/data-connect/web-sdk#instrument-clients).
 
 ```javascript
-import { connectDataConnectEmulator, getDataConnect, DataConnect } from 'firebase/data-connect';
+import { connectDataConnectEmulator, getDataConnect } from 'firebase/data-connect';
 import { connectorConfig } from '@firebasegen/default-connector';
 
 const dataConnect = getDataConnect(connectorConfig);
@@ -92,7 +92,7 @@ export interface ListMoviesData {
 ### Using `ListMovies`'s action shortcut function
 
 ```javascript
-import { getDataConnect, DataConnect } from 'firebase/data-connect';
+import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, listMovies } from '@firebasegen/default-connector';
 
 
@@ -116,7 +116,7 @@ listMovies().then((response) => {
 ### Using `ListMovies`'s `QueryRef` function
 
 ```javascript
-import { getDataConnect, DataConnect, executeQuery } from 'firebase/data-connect';
+import { getDataConnect, executeQuery } from 'firebase/data-connect';
 import { connectorConfig, listMoviesRef } from '@firebasegen/default-connector';
 
 
@@ -191,7 +191,7 @@ export interface CreateMovieData {
 ### Using `CreateMovie`'s action shortcut function
 
 ```javascript
-import { getDataConnect, DataConnect } from 'firebase/data-connect';
+import { getDataConnect } from 'firebase/data-connect';
 import { connectorConfig, createMovie, CreateMovieVariables } from '@firebasegen/default-connector';
 
 // The `CreateMovie` mutation requires an argument of type `CreateMovieVariables`:
@@ -223,7 +223,7 @@ createMovie(createMovieVars).then((response) => {
 ### Using `CreateMovie`'s `MutationRef` function
 
 ```javascript
-import { getDataConnect, DataConnect, executeMutation } from 'firebase/data-connect';
+import { getDataConnect, executeMutation } from 'firebase/data-connect';
 import { connectorConfig, createMovieRef, CreateMovieVariables } from '@firebasegen/default-connector';
 
 // The `CreateMovie` mutation requires an argument of type `CreateMovieVariables`:
